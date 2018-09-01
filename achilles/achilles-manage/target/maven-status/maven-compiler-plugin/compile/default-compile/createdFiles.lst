@@ -1,0 +1,8 @@
+com\domain\achilles\mapper\ManageMapper.class
+com\domain\achilles\bean\ManageQuery.class
+com\domain\achilles\mapper\provider\ManageSqlProvider$1.class
+com\domain\achilles\manage\ManageController.class
+com\domain\achilles\mapper\provider\ManageSqlProvider.class
+com\domain\achilles\bean\DomainInfo.class
+com\domain\achilles\service\ManageService.class
+com\domain\achilles\service\impl\ManageServiceImpl.class
