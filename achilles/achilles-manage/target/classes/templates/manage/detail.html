@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:prg="http://thymeleafexamples">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link
+            href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            rel="stylesheet"></link>
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script
+            src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .list-group-item {
+            padding: 20px 15px !important;
+        }
+    </style>
+
+</head>
+<body>
+
+<div id="ache_header" style="width: 85%; margin: 0 auto">
+    <th:block th:include="menu :: div"> default</th:block>
+</div>
+
+<div style="width: 70%; margin: 0 auto; text-align:center">
+    <ul class="list-group">
+        <li class="list-group-item active" th:text="'域名信息：' + ${domainInfo.punycode}"></li>
+        <li class="list-group-item" th:text="'域名售价：' + ${domainInfo.price}"></li>
+        <li class="list-group-item" th:text="'微信/360/管家：' + ${domainInfo.qqStatus}"></li>
+        <li class="list-group-item" th:text="'建站性质：' + ${domainInfo.icpNature}"></li>
+        <li class="list-group-item" th:text="'建站编号：' + ${domainInfo.icpNo}"></li>
+        <li class="list-group-item" th:text="'注册时间：' + ${domainInfo.registerDate}"></li>
+        <li class="list-group-item" th:text="'到期时间：' + ${domainInfo.expireDate}"></li>
+        <li class="list-group-item">
+            <button type="button" class="btn btn-default active"
+                    data-toggle="button"> 返回重新选购
+            </button>
+            <button type="button" class="btn btn-warning"
+                    data-toggle="button"> 要我购买
+            </button>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

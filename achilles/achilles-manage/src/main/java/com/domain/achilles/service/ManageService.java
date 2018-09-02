@@ -13,4 +13,6 @@ import java.util.List;
 public interface ManageService {
 
     List<DomainInfo> listByPage(ManageQuery query);
+
+    DomainInfo queryById(Long id);
 }

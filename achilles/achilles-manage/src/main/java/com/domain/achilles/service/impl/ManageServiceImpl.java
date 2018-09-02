@@ -30,6 +30,12 @@ public class ManageServiceImpl implements ManageService {
 
         return domainInfos;
     }
+
+    @Override
+    public DomainInfo queryById(Long id) {
+
+        return manageMapper.queryById(id);
+    }
 }
 
 

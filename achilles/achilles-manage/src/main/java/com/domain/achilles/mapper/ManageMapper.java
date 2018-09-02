@@ -17,4 +17,7 @@ public interface ManageMapper {
 
     @SelectProvider(type = ManageSqlProvider.class, method = "list")
     List<DomainInfo> list();
+
+    @SelectProvider(type = ManageSqlProvider.class, method = "queryById")
+    DomainInfo queryById(Long id);
 }

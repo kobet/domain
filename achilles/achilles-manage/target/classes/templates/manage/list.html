@@ -63,6 +63,10 @@ p {
 	font-style: normal;
 }
 
+
+
+
+
     </style>
 </head>
 <body>
@@ -89,7 +93,7 @@ p {
                 </thead>
                 <tbody>
                 <tr th:each="domainInfo : ${domainInfos}">
-                    <td th:text="${domainInfo.punycode}"></td>
+                    <td><a th:href="@{'/manage/detail/' + ${domainInfo.id}}" th:text="${domainInfo.punycode}"></a></td>
                     <td th:text="${domainInfo.suffix}"></td>
                     <td th:text="${domainInfo.prefix}"></td>
                     <td th:text="${domainInfo.registrar}"></td>
